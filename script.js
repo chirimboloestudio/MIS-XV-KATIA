@@ -47,21 +47,7 @@ musicBtn.addEventListener("click", () => {
 // =======================
 // 🎥 PARALLAX PORTADA
 // =======================
-const heroes = document.querySelectorAll(".foto-portada img");
 
-window.addEventListener("scroll", () => {
-  const scrollY = window.scrollY;
-  const portada = document.querySelector(".foto-portada");
-
-  if (!portada) return;
-
-  const limite = portada.offsetHeight;
-
-  heroes.forEach(hero => {
-    const movimiento = Math.min(scrollY * 0.3, limite * 0.3);
-    hero.style.transform = `translateY(${movimiento}px)`;
-  });
-});
 
 const fondoBlur = document.querySelector(".fondo-blur");
 const heroText = document.querySelector(".hero-text");
